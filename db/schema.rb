@@ -25,7 +25,6 @@ ActiveRecord::Schema.define(version: 20170419233949) do
   create_table "artists", force: :cascade do |t|
     t.string   "name"
     t.string   "image_url"
-    t.string   "string"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

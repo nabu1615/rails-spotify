@@ -1,0 +1,19 @@
+<div class="artist">
+	<div class="container">
+		<div class="row">
+			<h1><%= @artist.name %></h1>
+			<picture>
+				<img src="<%= @artist.image_url %>" alt="">
+			</picture>
+			<h2>Albums (<%= @artist.albums.count %>)</h2>
+			<% @artist.albums.each do |album| %>
+				<div class="artist-item__album col-sm-12 col-md-3">
+					<picture>
+						<img src="<%= album.image_url %>" alt="">
+					</picture>
+					<p><%= album.name %></p>
+				</div>
+			<% end %>	
+		</div>
+	</div>
+</div>

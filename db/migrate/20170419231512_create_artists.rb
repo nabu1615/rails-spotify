@@ -3,7 +3,6 @@ class CreateArtists < ActiveRecord::Migration[5.0]
     create_table :artists do |t|
       t.string :name
       t.string :image_url
-      t.string :string
 
       t.timestamps
     end
